@@ -3,17 +3,16 @@
 </template>
 
 <script>
-import A from './objA';
+import dog from './dog';
 export default {
-  mixins: [A],
-  name: 'xiaohong',
-  love: '',
-  personality: '花心',
+  mixins: [dog],
+  name: 'cat',
+  type: '布偶',
   created () {
       console.log(this.$options.name)
-      console.log(this.$options.love)
-      console.log(this.$options.personality)
-  },
+      console.log(this.$options.type)
+      console.log(this.$options.eat)
+  }
 }
 </script>
 

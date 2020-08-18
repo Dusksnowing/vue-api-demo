@@ -6,12 +6,12 @@ Vue.config.optionMergeStrategies.name = function (from, self) {
   return self ? self: from
 }
 
-Vue.config.optionMergeStrategies.love = function (from, self) {
+Vue.config.optionMergeStrategies.type = function (from, self) {
   return self ? self: from
 }
 
-Vue.config.optionMergeStrategies.personality = function (from, self) {
-  return self === '花心' ? '专一' : '花心'
+Vue.config.optionMergeStrategies.eat = function (from, self) {
+  return self ? self: from
 }
 new Vue({
   render: h => h(App),

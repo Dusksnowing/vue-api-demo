@@ -1,18 +1,20 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <button @click="btn">我是按钮</button>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import hit from './components/index';
 export default {
   name: 'App',
-  components: {
-    HelloWorld
-  }
+  methods: {
+    btn(){
+      hit('hello world').$on('results', (text) => {
+      console.log(text);
+    })
+    }
+  },
 }
 </script>
 
@@ -23,6 +25,6 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  margin: 40px;
 }
 </style>

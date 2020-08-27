@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    
+    <div id="title"></div>
   </div>
 </template>
 
@@ -15,6 +15,11 @@ export default {
 
 <style lang="less">
 #app {
-  
+  display: flex;
+  justify-content: center;
+  margin-top: 200px;
+}
+#title{
+  margin-bottom: 30px;
 }
 </style>

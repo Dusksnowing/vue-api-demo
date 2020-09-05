@@ -1,29 +1,16 @@
 <template>
   <div id="app">
     <div>
-      <div class="title">Vue.observable()：</div>
-      <ul>
-        <li>让一个对象可响应。Vue 内部会用它来处理 data 函数返回的对象</li>
-        <li>返回的对象可以直接用于渲染函数和计算属性内，并且会在发生变更时触发相应的更新。也可以作为最小化的跨组件状态存储器，用于简单的场景</li>
-      </ul>
-      <pre>
-        const state = Vue.observable({ count: 0 })
-
-        const Demo = {
-          render(h) {
-            return h('button', {
-              on: { click: () => { state.count++ }}
-            }, `count is: ${state.count}`)
-          }
-        }
-      </pre>
+      <div class="title">介绍部分</div>
+      <div>
+          <li></li>
+          <li></li>
+      </div>
 
       <hr>
+
       <div class="title">以下是demo部分：</div>
-      
-    
       <demo></demo> 
-      <test></test>  
 
     </div>
   </div>
@@ -31,7 +18,6 @@
 
 <script>
 import demo from './component/demo';
-import test from './component/test';
 
 export default {
   name: 'App',
@@ -42,7 +28,6 @@ export default {
   },
   components: {
     demo,
-    test,
   }
 }
 </script>
